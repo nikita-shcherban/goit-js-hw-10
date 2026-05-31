@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                      */import{f as r}from"./assets/vendor-EyZmBGcZ.js";const e=document.querySelector("[data-start]"),n=document.querySelector("#datetime-picker");e.disabled=!0;const i={enableTime:!0,time_24hr:!0,defaultDate:new Date,minuteIncrement:1,onClose(t){const o=t[0],a=new Date;o&&(o<=a?(window.alert("Please choose a date in the future"),e.disabled=!0):e.disabled=!1,console.log(t[0]))}};r(n,i);
+//# sourceMappingURL=1-timer.js.map
