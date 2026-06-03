@@ -5,7 +5,7 @@ const form = document.querySelector('.form');
 
 form.addEventListener('submit', createNote);
 
-function createNote() {
+function createNote(event) {
   event.preventDefault();
   const delay = Number(form.elements.delay.value);
   const state = form.elements.state.value;
