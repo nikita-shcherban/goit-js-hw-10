@@ -1,5 +1,7 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const buttonStart = document.querySelector('[data-start]');
 const daysCount = document.querySelector('[data-days]');
@@ -23,7 +25,9 @@ const options = {
     if (!selectedDate) return;
 
     if (selectedDate <= today) {
-      window.alert('Please choose a date in the future');
+      iziToast.show({
+        message: 'Please choose a date in the future',
+      });
       buttonStart.disabled = true;
       userSelectedDate = null;
     } else {
